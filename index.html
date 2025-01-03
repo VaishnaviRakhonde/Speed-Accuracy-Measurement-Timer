@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Timer Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Timer Clock</div>
+        <ul>
+            <li>
+                <img src="my profile photo.jpg" alt="Profile Photo" class="profile-image">
+                <a href="#" class="nav-link"><b>Vaishnavi Rakhonde</b></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Speed Meets Accuracy</h1>
+        <h2>Athlete</h2>
+        <div id="clock" class="clock">00:00:00</div>
+        <div class="time-inputs">
+            <input type="number" id="hours" placeholder="Hours" min="0" class="time-input">
+            <input type="number" id="minutes" placeholder="Minutes" min="0" class="time-input">
+            <input type="number" id="seconds" placeholder="Seconds" min="0" max="59" class="time-input">
+        </div>
+        <div class="buttons">
+            <button id="startButton">Start</button>
+            <button id="stopButton">Stop</button>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

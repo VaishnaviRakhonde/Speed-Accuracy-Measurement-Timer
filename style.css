@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("hero3.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("hero3.png");
+    padding: 10px 20px;
+    color:black;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color:red;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Added max-width for responsiveness */
+    margin: 30px auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.clock {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #e74c3c;
+}
+
+.time-input {
+    width: 60px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+    .clock {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .time-input {
+        width: 50px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .navbar ul li {
+        margin: 0 10px; /* Reduced margin for better alignment */
+    }
+}
